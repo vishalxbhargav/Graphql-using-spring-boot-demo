@@ -1,0 +1,13 @@
+type Player{
+    id:ID!
+    joursy:ID
+    name:String
+}
+type Query{
+    getAllPlayer:[Player]
+    findOne(id:ID):Player
+}
+type Mutation{
+    create(id:ID,joursy:ID,name:String):Player
+}
+
